@@ -1,0 +1,215 @@
+/*Colors
+
+Brand:#4a086b;
+seconardy:#2565ef;
+
+primary: Grey shade:#333 tints:#555
+
+font-weight:
+
+small:400 medium:500 semi-bold:600 bold:700
+
+line-height:
+small:1 medium:1.05 short:1.2 big:1.8
+
+border-radius:
+small:9px medium:11px big:50%
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: 0 0 0 8px rgba(37, 239, 74, 0.8);
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /*Έχεις ήδη JS αλλά αν θες το βάζεις*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/*HEADERS*/
+
+.heading-primary,
+.heading-secondary,
+.heading-teritary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+  color: #fff;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  color: #4a086b;
+}
+
+.heading-teritary {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+  color: #2565ef;
+  line-height: 1.2;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: #2565ef;
+  margin-bottom: 1.6rem;
+}
+
+/*Reusable Container*/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/*Reusable Grid*/
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /*Χαλάει το margin auto*/
+  /* align-items: center; */
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/*Reusable helper class*/
+
+.margin-right-md {
+  margin-right: 1.6rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.margin-right-sm {
+  margin-right: 1rem;
+}
+
+/*Reusable btns*/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn--cta:link,
+.btn--cta:visited {
+  color: #fff;
+  background-color: #4a086b;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: #9015cd;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #4a086b;
+  background-color: #fff;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background: none;
+  box-shadow: inset 0 0 0 3px #fff;
+  color: #fff;
+}
+
+/*Πρέπει να είναι κάτω από το .btn για να κάνεις override το padding*/
+.btn-form {
+  background-color: #4a086b;
+  align-self: end;
+  padding: 1.2rem;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  background-color: #9015cd;
+}
+
+.list-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #40c057;
+}
+
+.close-icon {
+  color: red;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 3.2rem;
+}

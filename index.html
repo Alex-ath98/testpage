@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Εδώ θα προσθέσεις το meta tag για το SEO που θα διαβάζουν οι screen readers και θα γνωρίζουν τι ακριβώς εκπροσωπεί η σελίδα σου meta=metadata περιγράφει δεδομένα-->
+
+    <!--Μέσα από το attribute name δηλώνεις τι ειδούς data περιγράφεις-->
+
+    <!--Στο content περιγράφεις τι εκπροσωπεί το site σου-->
+    <meta
+      name="description"
+      content="CloudVault is a secure and fast cloud storage service designed to keep your data safe and accessible anytime, anywhere. Whether you're an individual, a startup, or a growing business, CloudVault provides encrypted storage solutions with seamless multi-device sync and automatic backups. Our mission is to empower users to take full control of their digital files with peace of mind and unmatched reliability."
+    />
+
+    <title>CloudVault &mdash; Upgrade Now</title>
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Smooth scroll για safari-->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <!--Εδ΄ω θα μπουν τα icons-->
+    <!--Για να βάλεις το favicon 64x64 χρησιμοποίεις το στοιχείο link με την ιδιότητα rel="icon" και δεν βάζεις alt-text-->
+    <link rel="icon" href="imgs/favicon.png" />
+
+    <!--ICON 180x180 για favourite iOS αλλάζει απλά το rel-->
+
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!--ICON Android μέσω manifest script-->
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="logo-link">
+        <img src="imgs/CloudVault.png" alt="CloudVault Logo" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="#how-it-works">How CloudVault Works</a>
+          </li>
+          <li><a class="nav-link" href="#summary">CloudVault Summary</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing Plans</a></li>
+          <li>
+            <a href="#summary" class="header-btn nav-link nav-about"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="#call-to-action" class="header-btn nav-link nav-cta"
+              >Try it today</a
+            >
+          </li>
+        </ul>
+
+        >
+      </nav>
+      <!--Αν θες να πας τερμά δεξιά στο header με το margin-left:auto πρέπει το container η τα buttons να είναι παιδιά του flex-container header όχι του nav-->
+
+      <button
+        class="menu-btn"
+        role="button"
+        aria-label="mobile-navigation-button"
+      >
+        <ion-icon name="grid-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero-content">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Secure, simple, and reliable cloud storage for everyone.
+            </h1>
+
+            <p class="hero-text">
+              The secure and easy-to-use cloud storage platform trusted by
+              thousands to protect, sync, and access files across all devices.
+            </p>
+
+            <div class="btn-container">
+              <a href="#call-to-action" class="btn btn--cta margin-right-md"
+                >Get Started Now 😃</a
+              >
+              <a href="#summary" class="btn btn--outline">Learn More &darr;</a>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div
+            class="hero-img-box"
+            role="img"
+            aria-label="customer using CloudVault storage"
+          ></div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container text-center">
+          <h2 class="feature-text">Featured in</h2>
+          <div class="logos">
+            <img src="imgs/logos/business-insider.png" alt="feature-logo" />
+            <img src="imgs/logos/techcrunch.png" alt="feature-logo" />
+            <img src="imgs/logos/forbes.png" alt="feature-logo" />
+            <img src="imgs/logos/the-new-york-times.png" alt="feature-logo" />
+            <img src="imgs/logos/usa-today.png" alt="feature-logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-steps" id="how-it-works">
+        <div class="container text-center">
+          <span class="subheading">How CloudVault Works</span>
+          <h2 class="heading-secondary">3 simple steps to secure your data</h2>
+        </div>
+
+        <div class="container">
+          <div class="time-line">
+            <div class="time-line-item">
+              <div class="step-text-box">
+                <h3 class="heading-teritary">1. Create your account</h3>
+                <p class="step-text">
+                  Sign up in seconds with your email and Join one of the best
+                  Cloud services.
+                </p>
+              </div>
+              <div class="num-box">
+                <p class="step-num">1</p>
+                <div class="line-time"></div>
+              </div>
+              <div class="step-img-box">
+                <img
+                  src="imgs/steps/CloudVault-Account.png"
+                  class="step-img"
+                  alt="CloudVault Account illustration"
+                />
+              </div>
+            </div>
+
+            <div class="time-line-item">
+              <div class="step-img-box">
+                <img
+                  src="imgs/steps/CloudVault-Upload.png"
+                  class="step-img"
+                  alt="CloudVault Upload illustration"
+                />
+              </div>
+
+              <div class="num-box">
+                <p class="step-num">2</p>
+                <div class="line-time"></div>
+              </div>
+
+              <div class="step-text-box">
+                <h3 class="heading-teritary">2. Upload files</h3>
+                <p class="step-text">
+                  Drag & drop or select files from your device you can
+                  litterally do it from everywhere!.
+                </p>
+              </div>
+            </div>
+
+            <div class="time-line-item">
+              <div class="step-text-box">
+                <h3 class="heading-teritary">3.Access anywhere</h3>
+                <p class="step-text">
+                  Your files sync automatically across phones, tablets, and
+                  computers and this is a great User experience.
+                </p>
+              </div>
+              <div class="num-box">
+                <p class="step-num">3</p>
+                <div class="line-time"></div>
+              </div>
+              <div class="step-img-box">
+                <img
+                  src="imgs/steps/CloudVault-Subscription.png"
+                  class="step-img"
+                  alt="CloudVault Sub illustration"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-summary" id="summary">
+        <div class="container">
+          <blockquote class="summary">
+            <h2 class="heading-secondary">CloudVault Summary</h2>
+            <p class="summary-text">
+              CloudVault is a secure and fast cloud storage service designed to
+              keep your data safe and accessible anytime, anywhere. Whether
+              you're an individual, a startup, or a growing business, CloudVault
+              provides encrypted storage solutions with seamless multi-device
+              sync and automatic backups.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonial-container">
+          <span class="subheading">CloudVault Testimonials</span>
+          <h2 class="heading-secondary">
+            The secure and easy to use cloud storage.
+          </h2>
+          <div class="testimonials grid grid--2-cols">
+            <figure class="testimonial">
+              <img src="imgs/Customers/Customer-4.jpg" alt="Maria Labu" />
+              <blockquote class="testimonial-text">
+                CloudVault has completely changed how we back up and share
+                files. Fast, secure, and reliable.
+              </blockquote>
+              <p class="testimonial-author">&mdash; Maria L.</p>
+              <p class="testimonial-work">Freelance Designer</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="imgs/Customers/Customer-1.jpg" alt="Jhon Kenny" />
+              <blockquote class="testimonial-text">
+                I love the peace of mind knowing my data is safe and always
+                accessible on any device.
+              </blockquote>
+              <p class="testimonial-author">&mdash; John K</p>
+              <p class="testimonial-work">Startup Founder</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="imgs/Customers/Customer-3.jpg" alt="Mike lee" />
+              <blockquote class="testimonial-text">
+                I can honestly say that this is one of the best cloud storage
+                services.
+              </blockquote>
+              <p class="testimonial-author">&mdash; Mike l</p>
+              <p class="testimonial-work">Nero executive</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="imgs/Customers/Customer-7.jpg" alt="isabelle Core" />
+              <blockquote class="testimonial-text">
+                The user interface is so simple, even our non-tech staff use it
+                daily without issues.
+              </blockquote>
+              <p class="testimonial-author">&mdash; Isabelle C.</p>
+              <p class="testimonial-work">Office Manager</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="cloud-table">
+            <thead class="cloud-head">
+              <tr>
+                <th>Core Functions</th>
+                <th>CloudVault</th>
+                <th>Other Clouds</th>
+                <th>Free Clouds</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Linux and Windows</th>
+                <td>
+                  <ion-icon
+                    name="cloud-done-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Expandable with 100+ Extensions</th>
+                <td>
+                  <ion-icon
+                    name="cloud-done-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Tech Support & Troubleshooting</th>
+                <td>
+                  <ion-icon
+                    name="cloud-done-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Multiple Backend Languages</th>
+                <td>
+                  <ion-icon
+                    name="cloud-done-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+                <td>
+                  <ion-icon
+                    name="cloud-offline-outline"
+                    class="table-icon"
+                  ></ion-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div class="container pricing-container">
+          <span class="subheading">CloudVault Pricing</span>
+          <h2 class="heading-secondary">You dont want to miss this out.</h2>
+        </div>
+        <div class="container plan-grid">
+          <div class="plan plan-free">
+            <header class="plan-header">
+              <p class="plan-title">CloudVault Basic</p>
+              <p class="plan-price">Free plan</p>
+              <p class="plan-details">No cost included</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>5 GB basic Storage</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Auto Backup anytime</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Sync from any device</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="close-circle-outline"
+                  class="list-icon close-icon"
+                ></ion-icon>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  name="close-circle-outline"
+                  class="list-icon close-icon"
+                ></ion-icon>
+              </li>
+            </ul>
+            <div class="btn-container">
+              <a href="#call-to-action" class="btn btn--cta">Sign up now</a>
+            </div>
+          </div>
+
+          <div class="plan plan-business">
+            <header class="plan-header">
+              <p class="plan-title">CloudVault Business</p>
+              <p class="plan-price"><span>€</span>9.99/month</p>
+              <p class="plan-details">That just 2,30€ per week</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>1 TB Storage</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Auto Backup anytime</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Sync from any device</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>B2B Support</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>High Speed Transfer</span>
+              </li>
+            </ul>
+            <div class="btn-container">
+              <a href="#call-to-action" class="btn btn--cta">Sign up now</a>
+            </div>
+          </div>
+
+          <div class="plan plan-regular">
+            <header class="plan-header">
+              <p class="plan-title">CloudVault Regular</p>
+              <p class="plan-price"><span>€</span>5.99/month</p>
+              <p class="plan-details">That just 1,38€ per week</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>500 GB Storage</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Auto Backup anytime</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>Sync from any device</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  name="checkmark-circle-outline"
+                  class="list-icon"
+                ></ion-icon
+                ><span>High Speed Transfer</span>
+              </li>
+            </ul>
+            <div class="btn-container">
+              <a href="#call-to-action" class="btn btn--cta">Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="call-to-action">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Choose the most compatible price for you.
+              </h2>
+              <p class="cta-text">
+                Join in our parternship and use all the resources and tools that
+                you need to make your Company a better and more profitable
+                place.
+              </p>
+
+              <!--Στο netlify είναι σημαντικό να ενεργοποιήσεις το detect forms πριν κάνεις deploy-->
+              <!--name για να ξεχωρίσεις το περιεχόμενο του κάθε πεδιού που συμπληρώνεται-->
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Username</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Jhon Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="which-package"
+                    >Which package would you like</label
+                  >
+                  <select id="which-package" name="which-package" required>
+                    <option value="">Please select an option:</option>
+                    <option value="Free">I would like the Free package</option>
+                    <option value="Premium">
+                      I would like the Premium package
+                    </option>
+                    <option value="Regular">
+                      I would like the Regular package
+                    </option>
+                  </select>
+                </div>
+
+                <button class="btn btn-form">Sign Up Now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="3d-CloudVault-illustration"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Για να είναι στο κέντρο το footer θα βάλεις το container μέσα στο footer αλλιώς δεν θα είναι-->
+    <footer class="footer">
+      <div class="main-footer container grid">
+        <!--Για το logo-col δεν θα χρησιμοποίεις gap αλλά margin-bottom στο link γιατι το gap χαλάει το margin-top:auto στο copyright επίσης ούτε align-items center-->
+        <div class="logo-col">
+          <a href="#" class="footer-logo"
+            ><img src="imgs/CloudVault.png" alt="CloudVault Logo" class="logo"
+          /></a>
+          <ul class="social-list">
+            <!--Για τα links θα δώσεις χρώμα στα links όχι στα icons αλλιώς δεν θα αλλάζουν στο hover-->
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                class="footer-link"
+                aria-label="linkedin-site"
+                ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/"
+                aria-label="twitter-site"
+                class="footer-link"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/"
+                aria-label="github-site"
+                class="footer-link"
+                ><ion-icon name="logo-github" class="social-icon"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="year">Year</span> by CloudVault, Inc.
+            All rights reserved &mdash; Alex Athanasiadis
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="col-title">Contact us</p>
+          <address class="contacts">
+            <p class="address">122 Willson St., 4nd Floor, Los Angeles</p>
+            <p class="phone-info">
+              <a class="footer-link" href="tel:691234756">691-234-756</a>
+            </p>
+            <p>
+              <a class="footer-link" href="mailto:Upgrade@CloudVault.com"
+                >Upgrade@CloudVault.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="nav-col">
+          <p class="col-title">Account</p>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Create Account</a></li>
+              <li><a href="#" class="footer-link">Sign in</a></li>
+              <li><a href="#" class="footer-link">Account tools</a></li>
+              <li><a href="#" class="footer-link">Account Linux</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <p class="col-title">Company</p>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">About CloudVault</a></li>
+              <li><a href="#" class="footer-link">For Business</a></li>
+              <li><a href="#" class="footer-link">Server partners</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <p class="col-title">Resources</p>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Cloud Resources</a></li>
+              <li><a href="#" class="footer-link">Cloud Guard</a></li>
+              <li><a href="#" class="footer-link">Cloud Protocols</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!--Βήματα της html για να φτιάξεις ένα timeline 
+1) φτιάχνεις ένα container που θα είναι parent για όλα τα items με το όνομα time-line
+2) Μέσα στο container βάζεις το time-line-item που θα περιλαμβάνει 
+το img-box το num-box και το text-box και το κλείνεις.
+3) Για το επόμενο βήμα επαναλαμβάνεις την ίδια διαδικασία με το time-line-item
+4)Το pseudo-element για το line θα το δώσεις στο time-line όχι στο num
+
+
+
+-->
